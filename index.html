@@ -22,8 +22,8 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">Who am I?</a></li>
                     <li><a href="#services">My Services</a></li>
-                    <li><a href="#portfolio">Portfolios</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#portfolio">Portfolios and Contact Me</a></li>
+
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -146,7 +146,7 @@
                     <img src="images/trabaho4.jpg">
                     <div class="layer">
                         <h3>Student Tracker Application</h3>
-                        <p>This app lets you track your students' location, particularly when you're a school bus driver. Only works during Admin-specified class hours and days.
+                        <p>This app lets you track your students' locations.
                            Download it now on the Play Store!
                         </p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
@@ -175,36 +175,36 @@
         </div>
     </div>    
 <!-----contact stuff jdhfkjlfdgjidfb----->
-<div class="contact">
-    <div class="container">
-         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me Here</h1>
-                <p><i class="fa-regular fa-paper-plane"></i>&nbspEmail: amdimate43@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>&nbspPhone: +63 945 394 5299</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/philippine8129heavy"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://youtube.com/@flightspasta1315?si=ncDgGiKYidzt9SsW"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://discord.gg/T7fvxwU8SW"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.instagram.com/apy023h/"><i class="fa-brands fa-instagram"></i></a>
+    <div class="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me Here</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>&nbspEmail: amdimate43@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbspPhone: +63 945 394 5299</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/philippine8129heavy"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com/@flightspasta1315?si=ncDgGiKYidzt9SsW"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://discord.gg/T7fvxwU8SW"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.instagram.com/apy023h/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="CV-FINAL Resume.pdf" download class="btn btn2">Download CV/Resume Here</a>
                 </div>
-                <a href="CV-FINAL Resume.pdf" download class="btn btn2">Download CV/Resume Here</a>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name:" required>
+                        <input type="email" name="Email" placeholder="Email:" required>
+                        <textarea name="Message" rows="7" placeholder="Message to me:"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Name:" required>
-                    <input type="email" name="Email" placeholder="Email:" required>
-                    <textarea name="Message" rows="7" placeholder="Message to me:"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-         </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Adriaan Dimate. All Rights reserved.</p>
+        </div>
     </div>
-    <div class="copyright">
-        <p>Copyright @ Adriaan Dimate. All Rights reserved.</p>
-    </div>
-</div>
 
 
 
@@ -238,24 +238,23 @@
         }
     </script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbysRcUIs3KUkABAFTqt1lVt2ESmcdD7RxQYz_6d2R9gsbRu-mxzbeNLylyIHhgkljh5OQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-  
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message Submitted. Thank you!"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                }
-                .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysRcUIs3KUkABAFTqt1lVt2ESmcdD7RxQYz_6d2R9gsbRu-mxzbeNLylyIHhgkljh5OQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Submitted. Thank you!"
+                setTimeout(function(){
+                    msg.innerHTML = "")}, 5000)}
+                form.reset()
+            ,}
+            .catch(error => console.error('Error!', error.message))
+})
+</script>
 
 
 </body>
