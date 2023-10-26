@@ -1,0 +1,265 @@
+<!----https://www.youtube.com/watch?v=0YFrGy_mzjY, the vid---->
+<!----https://fontawesome.com/icons/up-right-from-square?f=classic&s=solid the icons ism---->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIMATE_FinalsOne</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/486adbd565.js" crossorigin="anonymous"></script>
+    <style>
+        .sub-title {
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Who am I?</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#portfolio">Portfolios</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer, Business Owner, and Commercial Pilot</p>
+                <h1>Hello guys, It's me!<br>I'm <span>Adriaan</span>, from the Philippines.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="images/1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">&nbspAbout Me</h1>
+                    <p> Hello! I am Adriaan M. Dimate, a 43 year old senior first officer as of this time of writing.<br> 
+                        I am a person diagnosed with Autism Spectrum Disorder since childhood.</br>
+                        I love programming, flying and learning new stuff ahead of time ^ ^<br>
+                        Ready to serve your computing and flying needs!</br>
+                    </p>
+                    <br></br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <br>
+                            <li><span><b>Senior First Officer</b></span><br>Flying long and short haul routes globally</br></li>
+                            <li><span><b>Web Development</b></span><br>Web Applications Development</br></li>
+                            <li><span><b>Application Development</b></span><br>Windows, Android and IOS app buiilding</br></li>
+                            <li><span><b>C, C++, Python, Java, Javascript, HTML, CSS, SQL, and PHP</b></span><br>Experienced Languages</li>
+                            <li><span><b>A350-900, A330-300, A320-200NEO/CEO, A321-200</b></span><br>Airbus Planes Type Rated</li>
+                            <li><span><b>B737-800; B777-300ER; B777X, B787-800</b></span><br>Boeing Planes Type Rated</li>
+                            </br>    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <br>
+                            <li><span><b>April 2042-Present</b></span><br>Senior First Officer</br>
+                            <span>Philippine Airlines</span></li>
+                            <li><span><b>May 2038-April 2042</b></span><br>Junior First Officer</br>
+                            <span>Philippine Airlines</span></li>
+                            <li><span><b>December 2035-April 2038</b></span><br>Limited First Officer</br>
+                                <span>Philippine Airlines</span></li>
+                            <li><span><b>May 2034-Present</b></span><br>Software Developer/Owner</br>
+                                <span>DimaPC! Store Business</span></li>
+                            <li><span><b>September 2031-October 2035</b></span><br>Senior Software Engineer</br>
+                                <span>Azeus Group of Companies</span></li>
+                            <li><span><b>October 2027-August 2031</b></span><br>Junior Software Engineer</br>
+                                <span>Azeus Group of Companies</span></li>
+                            <li><span><b>2023-2026</b></span><br>Software Developer/Co-Owner</br>
+                                <span>TDA Car Rental Co.</span></li>
+                            </br>    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <br>
+                            <li><span><b>2036-2038</b></span><br>University of the Philippines - Diliman Campus</br>
+                                <span><i>Master of Science in Computer Science</i></span><br>
+                                <span>Cum Laude</span></br></li>
+                            <li><span><b>2031-2033</b></span><br>Laminar Aviation Inc.</br>
+                                <span><i>Airline Transport Pilot Course</i></span><br>
+                                <span>Completer</span></br></li>
+                            <li><span><b>2027-2031</b></span><br>Philippine State College of Aeronauics</br>
+                                <span><i>Bachelor of Science in Air Transportation</i></span><br>
+                                <span>Summa Cum Laude</span></br></li>
+                            <li><span><b>2023-2027</b></span><br>Gordon College</br>
+                                <span><i>Bachelor of Science in Computer Science</i></span><br>
+                                <span>Cum Laude</span></br></li>
+                            <li><span><b>2017-2023</b></span><br>Regional Science High School III</br>
+                                <span>With Honors</span></li>
+                            
+                            </br>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Android/iOS App Development</h2>
+                    <p>I develop android applications that are tailored and customized to my customers' needs.</p>
+                    <a href="#">Find Out More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Website Development</h2>
+                    <p>To augment the applications, I also create websites and website applications as ordered by the customer.</p>
+                    <a href="#">Find Out More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Personal Computer Parts, Repair, and Building</h2>
+                    <p>As part of my business, I personally build customized personal computers for my customers.</p>
+                    <a href="#">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">All My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/trabaho4.jpg">
+                    <div class="layer">
+                        <h3>Student Tracker Application</h3>
+                        <p>This app lets you track your students' location, particularly when you're a school bus driver. Only works during Admin-specified class hours and days.
+                           Download it now on the Play Store!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/trabaho2.webp">
+                    <div class="layer">
+                        <h3>A random desktop!</h3>
+                        <p>This is the particular one I use to create my clients' projects.
+                           Inquire now for custom build setups!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/trabaho3.jpg">
+                    <div class="layer">
+                        <h3>Web Blog</h3>
+                        <p>A web blog for my fellow livery makers in a specific Android Flight Simululation app.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#", class="btn">See More</a>
+        </div>
+    </div>    
+<!-----contact stuff jdhfkjlfdgjidfb----->
+<div class="contact">
+    <div class="container">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me Here</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>&nbspEmail: amdimate43@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>&nbspPhone: +63 945 394 5299</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/philippine8129heavy"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://youtube.com/@flightspasta1315?si=ncDgGiKYidzt9SsW"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://discord.gg/T7fvxwU8SW"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/apy023h/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="CV-FINAL Resume.pdf" download class="btn btn2">Download CV/Resume Here</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name:" required>
+                    <input type="email" name="Email" placeholder="Email:" required>
+                    <textarea name="Message" rows="7" placeholder="Message to me:"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Adriaan Dimate. All Rights reserved.</p>
+    </div>
+</div>
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysRcUIs3KUkABAFTqt1lVt2ESmcdD7RxQYz_6d2R9gsbRu-mxzbeNLylyIHhgkljh5OQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Submitted. Thank you!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                }
+                .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
+
