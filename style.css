@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Minecraft', sanf-serif;
+    font-family: 'lucida sans unicode', sanf-serif;
     box-sizing: border-box;
 }
 
@@ -260,7 +260,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
     color: #ff903f;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 60px;
     background-color: #fff;
     width: 60px;
