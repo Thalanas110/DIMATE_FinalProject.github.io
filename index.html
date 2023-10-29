@@ -1,3 +1,5 @@
+<!----https://www.youtube.com/watch?v=0YFrGy_mzjY, the vid---->
+<!----https://fontawesome.com/icons/up-right-from-square?f=classic&s=solid the icons ism---->
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +24,7 @@
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">Who am I?</a></li>
                     <li><a href="#services">My Services</a></li>
-                    <li><a href="#portfolio">Portfolios and Contact Me</a></li>
+                    <li><a href="#portfolio-scroll">Portfolios and Contact Me</a></li>
 
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -174,6 +176,9 @@
             <a href="#", class="btn">See More</a>
         </div>
     </div>    
+    <!-----fake div for better scroll to the portfolio page----->
+    <div id="portfolio-scroll">
+    </div> 
 <!-----contact stuff jdhfkjlfdgjidfb----->
     <div class="kontak">
         <div class="container">
@@ -197,7 +202,7 @@
                         <textarea name="Message" rows="7" placeholder="Message to me:"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
-                    <span id="msg"></span>
+                    <span id="msg">Message submitted!</span>
                 </div>
             </div>
         </div>
@@ -224,9 +229,8 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    </script>
-
-    <script>
+    
+    
 
         var sidemenu = document.getElementById("sidemenu");
 
@@ -236,27 +240,25 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
-    </script>
+    
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbysRcUIs3KUkABAFTqt1lVt2ESmcdD7RxQYz_6d2R9gsbRu-mxzbeNLylyIHhgkljh5OQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysRcUIs3KUkABAFTqt1lVt2ESmcdD7RxQYz_6d2R9gsbRu-mxzbeNLylyIHhgkljh5OQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
-             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message Submitted. Thank you!"
+                msg.innerHTML = "Message Submitted. Thank you!";
                 setTimeout(function(){
-                    msg.innerHTML = "")}, 5000)}
-                form.reset()
-            ,}
-            .catch(error => console.error('Error!', error.message))
-})
-</script>
-
-
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+    </script>
 </body>
 </html>
-
