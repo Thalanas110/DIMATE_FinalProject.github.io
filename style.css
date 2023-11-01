@@ -67,6 +67,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 25px;
+
 }
 
 .header-text h1{
@@ -81,7 +82,20 @@ nav ul li a:hover::after{
 #about{
     padding: 65px 0;
     color: #ababab;
+    background-image: url("images/background-about.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
+.transparent-box {
+    background-color: rgba(0, 0, 0, 0.61); 
+    color: #fff; 
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    width: 90%;
+    position: relative;
+  }
 
 .row{
     display: flex;
@@ -123,7 +137,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #4b484b;
+    background: #858385;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -140,7 +154,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #979ea4;
+    color: #c9c5c5;
     font-size: 14px;
 }
 
