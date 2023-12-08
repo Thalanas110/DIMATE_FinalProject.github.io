@@ -9,7 +9,6 @@ Four languages are involved in this project:
 HTML5
 CSS
 JavaScript
------------
 Assembly
 
 This site could be opened on both mobile and the windows/mac/linux. But, be aware that the site requires 85% viewing for desktop. Mobile site may not work that well too.
